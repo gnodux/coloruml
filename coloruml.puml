@@ -19,6 +19,7 @@ skinparam defaultFontName "Comic Sans MS"
 center footer <font color=red>Warning:</font>Discussion only.
 !endfunction
 
+
 !function legend()
 hide stereotype
 legend right
@@ -78,7 +79,7 @@ skinparam Arrow{
 
 skinparam wrapWidth 200
 
-!global $default_type = "class"
+!global $default_type = "object"
 
 !define model(category,label,alias) $default_type "label" as alias <<category>>
 !define model(category,label) $default_type label <<category>>
