@@ -1,0 +1,139 @@
+@startuml "4color domain model"
+
+
+!define THING_COLOR #CCFFAF
+!define ROLE_COLOR #FEFFAF
+!define MOMENT_COLOR #FFB7AF
+!define DESC_COLOR #AFD1FF
+!define BORDER_COLOR #666666
+
+skinparam {
+defaultFontName "Microsoft YaHei"
+LineType ortho
+Shadowing false
+}
+
+!function hand_write()
+skinparam handwritten true
+skinparam defaultFontName "Comic Sans MS"
+center footer <font color=red>Warning:</font>Discussion only.
+!endfunction
+
+!function legend()
+hide stereotype
+legend right
+|=  Color             |= Type |
+|<THING_COLOR>      | Thing/Place/Party |
+|<MOMENT_COLOR>      | Moment of interval |
+|<ROLE_COLOR>   | Role |
+|<DESC_COLOR>      | Description |
+endlegend
+!endfunction
+
+skinparam package{
+    BorderColor #666666
+}
+skinparam rectangle{
+    BorderStyle dashed
+}
+skinparam note{
+    BackgroundColor White
+    BorderColor #666666
+    FontSize 9
+    FontStyle italic
+}
+skinparam class{
+    BorderColor BORDER_COLOR
+    BorderThickness 0.8
+    FontSize 12
+    AttributeFontSize 9
+    BackgroundColor<<thing>> THING_COLOR
+    BackgroundColor<<place>> THING_COLOR
+    BackgroundColor<<party>> THING_COLOR
+    BackgroundColor<<moment-interval>> MOMENT_COLOR
+    BackgroundColor<<description>> DESC_COLOR
+    BackgroundColor<<role>> ROLE_COLOR
+    Shadowing false
+}
+
+
+skinparam object{
+    BorderColor BORDER_COLOR
+    BorderThickness 0.8
+    FontSize 12
+    AttributeFontSize 9
+    BackgroundColor<<thing>> THING_COLOR
+    BackgroundColor<<place>> THING_COLOR
+    BackgroundColor<<party>> THING_COLOR
+    BackgroundColor<<moment-interval>> MOMENT_COLOR
+    BackgroundColor<<description>> DESC_COLOR
+    BackgroundColor<<role>> ROLE_COLOR
+    Shadowing false
+}
+skinparam Arrow{
+ Color blue
+}
+
+
+
+skinparam wrapWidth 200
+
+!global $default_type = "class"
+
+!define model(category,label,alias) $default_type "label" as alias <<category>>
+!define model(category,label) $default_type label <<category>>
+
+!define thing(label,alias) model("thing",label,alias)
+!define thing(label) model("thing",label,label)
+!define place(label,alias) model("place",label,alias)
+!define place(label) model("place",label,label)
+!define party(label,alias) model("party",label,alias)
+!define party(label) model("party",label,label)
+!define role(label,alias) model("role",label,alias)
+!define role(label) model("role",label)
+!define moment(label,alias) model("moment-interval",alias)
+!define moment(label) model("moment-interval",label)
+!define desc(label,alias) model("description",label,alias)
+!define desc(label) model("description",label)
+
+
+' connect object
+!define rel(obj1,obj2) obj1 . obj2
+!define rel(o) . o
+
+
+
+!define has(obj) o-- obj
+!define has_r(obj) has(obj)
+!define has_l(obj) o-left- obj
+!define has_u(obj) o-up- obj
+!define has_d(obj) o-down- obj
+!define has(obj,label1,label2) "label1" o-right- "label2" obj
+
+!define onetomany(obj1,obj2) obj1 has(obj2)
+!define onetoone(obj1,obj2) obj1 -- obj2
+
+!define contains(obj) ----* obj
+!define contains_r(obj) contains(obj)
+!define contains_l(obj) -left-* obj
+!define contains_u(obj) -up-* obj
+!define contains_d(obj) -down-* obj
+
+
+!define from(obj) --|> obj
+
+'layout
+
+!define link(o1,o2) o1 -[hidden]- o2
+!define layout_r(obj1) -[hidden]right- obj1
+!define layout_l(o1) -[hidden]left- o1
+!define layout_u(o1) -[hidden]up- o1
+!define layout_d(o1) -[hidden]down- o1
+
+!define domain(label,alias) rectangle "==label" as alias
+!define domain(label) rectangle "==label"
+
+
+
+
+@enduml
