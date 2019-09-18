@@ -1,0 +1,15 @@
+@startuml
+
+!include https://raw.githubusercontent.com/gnodux/coloruml/master/coloruml.puml
+
+moment(Order)
+moment(Bill)
+moment(Delivery)
+thing(Book)
+role(Customer)
+
+Order contains(Bill)
+Order contains(Delivery)
+Order has(Book)
+Customer has(Order)
+@enduml
