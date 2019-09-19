@@ -1,31 +1,13 @@
 # 基于PlantUML 的4色 领域模型建模
 
-## 关于PlantUML
 
-PlantUML是一个开源项目，支持快速绘制：
+## coloruml
 
-- 时序图
-- 用例图
-- 类图
-- 活动图 (旧版语法在此处)
-- 组件图
-- 状态图
-- 对象图
-- 部署图 
-- 定时图 
+这个项目是在[PlantUML](http://plantuml.com)的基础上的定制，支持快速绘制领域模型图.
 
-同时还支持以下非UML图:
+结合[C4 Model](http://c4model.com),基本可以实现从业务到技术架构的完整设计，C4 model参考另外一个项目: [C4-PlantUML](https://www.github.com/gnodux/C4-PlantUML)
 
-- 线框图形界面
-- 架构图
-- 规范和描述语言 (SDL)
-- Ditaa diagram
-- 甘特图 
-- 思维导图 
-- Work Breakdown Structure diagram 
-- 以 AsciiMath 或 JLaTeXMath 符号的数学公式
-- Entity Relationship diagram
-
+PlantUML是一个开源项目，支持"写文字"的方式快速绘制多种图形UML及非UML图形。
 具体语法可以参考：[PlantUML](http://plantuml.com)
 
 ## 关于4色领域模型建模
@@ -49,10 +31,6 @@ _Peter Coad提出的几类基本元模型对于实际进行建模工作有着非
 * [https://www.infoq.cn/article/xh-four-color-modeling](https://www.infoq.cn/article/xh-four-color-modeling)
 * [从“四色建模法”到“限界纸笔建模法”](https://insights.thoughtworks.cn/paper-pen-modeling/)
 * [谈谈领域建模](http://fanyilun.me/2018/04/08/%E8%B0%88%E8%B0%88%E9%A2%86%E5%9F%9F%E5%BB%BA%E6%A8%A1/)
-
-## 关于color uml
-
-这个项目是在PlantUML的基础上的定制，支持快速绘制领域模型图
 
 ## Getting start
 
