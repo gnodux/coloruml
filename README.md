@@ -67,20 +67,36 @@ _Peter Coad提出的几类基本元模型对于实际进行建模工作有着非
 [Book Store](samples/bookstore.puml)
 
 ```csharp
-@startuml
+@startuml Book Store sample
 
 !include https://raw.githubusercontent.com/gnodux/coloruml/master/coloruml.puml
+'
+'!include ../coloruml.puml
+left_to_right
 
 moment(Order)
 moment(Bill)
 moment(Delivery)
 thing(Book)
+desc(Comments)
 role(Customer)
+thing(Employee)
+thing(Author)
+role(Courier)
+role(Accounting)
 
+Courier from(Employee)
+Accounting from(Employee)
+
+Book contains(Comments)
+Book has(Author)
 Order contains(Bill)
 Order contains(Delivery)
 Order has(Book)
+Bill has(Accounting)
+Delivery has(Courier)
 Customer has(Order)
+
 @enduml
 ```
-![Book Store](http://www.plantuml.com/plantuml/png/NSwxJiKm30RWFKznsDgbsPcE2ZlF41AhYV2bScmkRuzQGeSp_h_bpxvtIsfE6C9JuunUu5RDzluSewQlPMjM_TqxQ1OsO5koKDnOYd_7B2ZgX95IDz0hB_i9aX2mJMzQGEV_j3R4Axm2ja_GdpbORRnDgyZ775GGfXVl9dGiXXEu7VTJupw4X_AIng2cFhG_Q5JZbpjmSS9V "Book store") 
+![Book Store](http://www.plantuml.com/plantuml/png/NP2zLiCm38LtFqMPcYp9pjGVc7c4dk2eiG-IbIDBGDyUJ7426Q_kPrdt7h8EeaRe7cBoQ2FiWkgS7_jUXezkYXhirJA8vwIGjFDC_PHujC_UCx8OOKz3Lf15TtFPjtVxPMNNRKo4grwKBnAdeCuH4oHjNcG4QQiwHSH5F076Tv1RwpJ4D3KdvhVMZP1zSsOgI6wTC49pjgnC89LyfXdv1b3rqJImL9XD8bHrz9ujwJVLElThxQx2z6V9ocmTLsxQbPw6cF9wrdqUXhny_PDp9KlGxN09N8to_Xwwu4N-ExVYnLXJrIxAjBPxW3GQuHS0 "Book store") 
