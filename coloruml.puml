@@ -17,6 +17,9 @@ Shadowing false
 skinparam LineType ortho
 !endfunction
 
+!define left_to_right left to right direction
+!define top_to_bottom top to bottom direction
+
 !function hand_write()
 skinparam handwritten true
 skinparam defaultFontName "Comic Sans MS"
