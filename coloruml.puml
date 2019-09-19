@@ -9,9 +9,13 @@
 
 skinparam {
 defaultFontName "Microsoft YaHei"
-LineType ortho
+'LineType ortho
 Shadowing false
 }
+
+!function hard_line()
+skinparam LineType ortho
+!endfunction
 
 !function hand_write()
 skinparam handwritten true
@@ -114,7 +118,7 @@ skinparam wrapWidth 200
 !define onetomany(obj1,obj2) obj1 has(obj2)
 !define onetoone(obj1,obj2) obj1 -- obj2
 
-!define contains(obj) ----* obj
+!define contains(obj) -* obj
 !define contains_r(obj) contains(obj)
 !define contains_l(obj) -left-* obj
 !define contains_u(obj) -up-* obj
@@ -123,7 +127,7 @@ skinparam wrapWidth 200
 
 !define from(obj) --|> obj
 
-'layout
+'layouts
 
 !define link(o1,o2) o1 -[hidden]- o2
 !define layout_r(obj1) -[hidden]right- obj1

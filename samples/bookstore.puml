@@ -1,15 +1,26 @@
-@startuml
+@startuml Book Store sample
 
 !include https://raw.githubusercontent.com/gnodux/coloruml/master/coloruml.puml
+
+'!include ../coloruml.puml
 
 moment(Order)
 moment(Bill)
 moment(Delivery)
 thing(Book)
 role(Customer)
+thing(Employee)
+role(Meterial)
+role(Accounting)
+
+Meterial from(Employee)
+Accounting from(Employee)
 
 Order contains(Bill)
 Order contains(Delivery)
 Order has(Book)
+Order has(Accounting)
+Order has(Meterial)
 Customer has(Order)
+
 @enduml
