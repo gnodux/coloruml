@@ -77,4 +77,11 @@ Customer has(Order)
 
 @enduml
 ```
-![Book Store](http://www.plantuml.com/plantuml/png/NP2zLiCm38LtFqMPcYp9pjGVc7c4dk2eiG-IbIDBGDyUJ7426Q_kPrdt7h8EeaRe7cBoQ2FiWkgS7_jUXezkYXhirJA8vwIGjFDC_PHujC_UCx8OOKz3Lf15TtFPjtVxPMNNRKo4grwKBnAdeCuH4oHjNcG4QQiwHSH5F076Tv1RwpJ4D3KdvhVMZP1zSsOgI6wTC49pjgnC89LyfXdv1b3rqJImL9XD8bHrz9ujwJVLElThxQx2z6V9ocmTLsxQbPw6cF9wrdqUXhny_PDp9KlGxN09N8to_Xwwu4N-ExVYnLXJrIxAjBPxW3GQuHS0 "Book store") 
+![Book Store](http://www.plantuml.com/plantuml/png/NP2zLiCm38LtFqMPcYp9pjGVc7c4dk2eiG-IbIDBGDyUJ7426Q_kPrdt7h8EeaRe7cBoQ2FiWkgS7_jUXezkYXhirJA8vwIGjFDC_PHujC_UCx8OOKz3Lf15TtFPjtVxPMNNRKo4grwKBnAdeCuH4oHjNcG4QQiwHSH5F076Tv1RwpJ4D3KdvhVMZP1zSsOgI6wTC49pjgnC89LyfXdv1b3rqJImL9XD8bHrz9ujwJVLElThxQx2z6V9ocmTLsxQbPw6cF9wrdqUXhny_PDp9KlGxN09N8to_Xwwu4N-ExVYnLXJrIxAjBPxW3GQuHS0 "Book store")
+
+## IntelliJ IDEA 集成
+
+
+* 在JetBrains 下载IntelliJ IDEA [Download IntelliJ IDEA](https://www.jetbrains.com/idea/download/)
+* 安装Plugins: PlantUML Integration / PlantUML Syntax Checker
+
