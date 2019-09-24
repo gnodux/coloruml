@@ -5,7 +5,7 @@
 '!include ../coloruml.puml
 left_to_right
 
-moment(Order)
+moment(订单,Order)
 moment(Bill)
 moment(Delivery)
 thing(Book)
@@ -27,5 +27,6 @@ Order has(Book)
 Bill has(Accounting)
 Delivery has(Courier)
 Customer has(Order)
+Customer has(Comments)
 
 @enduml

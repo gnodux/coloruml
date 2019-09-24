@@ -9,8 +9,8 @@
 
 skinparam {
 defaultFontName "Microsoft YaHei"
-'LineType ortho
-Shadowing false
+    'LineType ortho
+    Shadowing false
 }
 
 !function hard_line()
@@ -92,14 +92,14 @@ skinparam wrapWidth 200
 !define model(category,label) $default_type label <<category>>
 
 !define thing(label,alias) model("thing",label,alias)
-!define thing(label) model("thing",label,label)
+!define thing(label) model("thing",label)
 !define place(label,alias) model("place",label,alias)
-!define place(label) model("place",label,label)
+!define place(label) model("place",label)
 !define party(label,alias) model("party",label,alias)
-!define party(label) model("party",label,label)
+!define party(label) model("party",label)
 !define role(label,alias) model("role",label,alias)
 !define role(label) model("role",label)
-!define moment(label,alias) model("moment-interval",alias)
+!define moment(label,alias) model("moment-interval",label,alias)
 !define moment(label) model("moment-interval",label)
 !define desc(label,alias) model("description",label,alias)
 !define desc(label) model("description",label)
@@ -110,8 +110,8 @@ skinparam wrapWidth 200
 !define rel(o) . o
 
 
-
-!define has(obj) o-- obj
+' has defined
+!define has(obj) o- obj
 !define has_r(obj) has(obj)
 !define has_l(obj) o-left- obj
 !define has_u(obj) o-up- obj
