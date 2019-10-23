@@ -17,8 +17,12 @@ defaultFontName "Microsoft YaHei"
 skinparam LineType ortho
 !endfunction
 
-!define left_to_right left to right direction
-!define top_to_bottom top to bottom direction
+!function left_to_right()
+left to right direction
+!endfunction
+!function top_to_bottom()
+top to bottom direction
+!endfunction
 
 !function hand_write()
 skinparam handwritten true
@@ -86,7 +90,7 @@ skinparam Arrow{
 
 skinparam wrapWidth 200
 
-!global $default_type = "object"
+!global $default_type = "class"
 
 !define model(category,label,alias) $default_type "label" as alias <<category>>
 !define model(category,label) $default_type label <<category>>
