@@ -91,9 +91,13 @@ Bill layout_u(Delivery)
 
 ## IntelliJ IDEA 集成
 
-
+### IntelliJ IDEA
 * 在JetBrains 下载IntelliJ IDEA [Download IntelliJ IDEA](https://www.jetbrains.com/idea/download/)
 * 安装Plugins: PlantUML Integration / PlantUML Syntax Checker
+
+### Visual studio code
+
+安装 [PlantUML extension](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml)
 
 ## 开始绘制你的领域模型
 
