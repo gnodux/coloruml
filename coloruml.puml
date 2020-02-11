@@ -92,21 +92,21 @@ skinparam wrapWidth 200
 
 !global $default_type = "class"
 
-!define model(category,label,alias) $default_type "label" as alias <<category>>
-!define model(category,label) $default_type label <<category>>
+!define model(category,label,alias,spot) $default_type "label" as alias <<category>><<(spot,#CABAF5)>>
+!define model(category,label,spot) $default_type label <<category>><<(spot,#CABAF5)>>
 
-!define thing(label,alias) model("thing",label,alias)
-!define thing(label) model("thing",label)
-!define place(label,alias) model("place",label,alias)
-!define place(label) model("place",label)
-!define party(label,alias) model("party",label,alias)
-!define party(label) model("party",label)
-!define role(label,alias) model("role",label,alias)
-!define role(label) model("role",label)
-!define moment(label,alias) model("moment-interval",label,alias)
-!define moment(label) model("moment-interval",label)
-!define desc(label,alias) model("description",label,alias)
-!define desc(label) model("description",label)
+!define thing(label,alias) model("thing",label,alias,T)
+!define thing(label) model("thing",label,T)
+!define place(label,alias) model("place",label,alias,P)
+!define place(label) model("place",label,P)
+!define party(label,alias) model("party",label,alias,P)
+!define party(label) model("party",label,P)
+!define role(label,alias) model("role",label,alias,R)
+!define role(label) model("role",label,R)
+!define moment(label,alias) model("moment-interval",label,alias,M)
+!define moment(label) model("moment-interval",label,M)
+!define desc(label,alias) model("description",label,alias,D)
+!define desc(label) model("description",label,D)
 
 
 ' connect object
@@ -115,7 +115,7 @@ skinparam wrapWidth 200
 
 
 ' has defined
-!define has(obj) o- obj
+!define has(obj) o-- obj
 !define has_r(obj) has(obj)
 !define has_l(obj) o-left- obj
 !define has_u(obj) o-up- obj
@@ -125,7 +125,7 @@ skinparam wrapWidth 200
 !define onetomany(obj1,obj2) obj1 has(obj2)
 !define onetoone(obj1,obj2) obj1 -- obj2
 
-!define contains(obj) -* obj
+!define contains(obj) --* obj
 !define contains_r(obj) contains(obj)
 !define contains_l(obj) -left-* obj
 !define contains_u(obj) -up-* obj

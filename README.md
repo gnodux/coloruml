@@ -47,9 +47,9 @@ _Peter Coad提出的几类基本元模型对于实际进行建模工作有着非
 ```csharp
 @startuml Book Store sample
 
-!include https://raw.githubusercontent.com/gnodux/coloruml/master/coloruml.puml
-'
-'!include ../coloruml.puml
+'!include https://raw.githubusercontent.com/gnodux/coloruml/master/coloruml.puml
+
+!include ../coloruml.puml
 'left_to_right
 
 moment(订单,Order){
@@ -85,6 +85,7 @@ Customer has(Order)
 Customer has(Comments)
 
 Bill layout_u(Delivery)
+
 @enduml
 ```
 ![Book Store](http://www.plantuml.com/plantuml/svg/NL51ZjGm4BptAynf4mabTqwxiyk12npc0ICJzoOMjdlKRWCHsYTmv0CyW5yXyGmSRvoCCeUHggjIrLs-Zw9PadVgHFH5dOKOLTJ-wX3WZGs3ImRL97ADx_gUzRTkj3AbpoaY3nG4WtG3-NuCPDBtVY17dDrwhwCWRxYxvZ-uWxlDikkEfCDdkGXTs8wJ07ZosRpvz-Vttv-_tdvYWzp-09L_DeWg-8FPy5cqf0ZmKhyxMUVQ2fxGsQ_8SmiosJ0sowqj68n3yqX-aSGMc1msZoaAUUIgV9-Re1bnZJuBvwdwg3qM_AG5rScoJ4RFXsMQ5bvMbuSa4t6DeCGMAteO1af1ige5M2drpEJtQDWrHmRAgoqFeMs8-p6lyqd7Yzd2IsMxjXHq7DQYAf4Trh8MUO6t2rTv8RQxQeTbMdmEittDLrkdPqfoIJVnznXCyku_ "Book store")
