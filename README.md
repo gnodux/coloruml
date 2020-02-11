@@ -88,7 +88,7 @@ Bill layout_u(Delivery)
 
 @enduml
 ```
-![Book Store](http://www.plantuml.com/plantuml/svg/NL51ZjGm4BptAynf4mabTqwxiyk12npc0ICJzoOMjdlKRWCHsYTmv0CyW5yXyGmSRvoCCeUHggjIrLs-Zw9PadVgHFH5dOKOLTJ-wX3WZGs3ImRL97ADx_gUzRTkj3AbpoaY3nG4WtG3-NuCPDBtVY17dDrwhwCWRxYxvZ-uWxlDikkEfCDdkGXTs8wJ07ZosRpvz-Vttv-_tdvYWzp-09L_DeWg-8FPy5cqf0ZmKhyxMUVQ2fxGsQ_8SmiosJ0sowqj68n3yqX-aSGMc1msZoaAUUIgV9-Re1bnZJuBvwdwg3qM_AG5rScoJ4RFXsMQ5bvMbuSa4t6DeCGMAteO1af1ige5M2drpEJtQDWrHmRAgoqFeMs8-p6lyqd7Yzd2IsMxjXHq7DQYAf4Trh8MUO6t2rTv8RQxQeTbMdmEittDLrkdPqfoIJVnznXCyku_ "Book store")
+![Book Store](http://www.plantuml.com/plantuml/svg/NL4xJiGm4ErzYcorYOIIdcu_5Dj0iGU8J3ARMDYUrNWCH8WZK7813i2ja3W6Jh9EbhYmz6QUtvjvNYbRQLz3qZAVtMrHa7p96yMjV_GEg4BBO3clq1IDnTg_5XLg96zqOQHZe0ddvt09iLv5nJnVzDOQJbmobgIQbeKmQ89s-llzzVFnUVD0DL3s9f9mbELam8TwmaUMx9qGx_7TLccTHR07hPw1kanmgsoJRX6VCb63gz8TcfxYCa6e8Trvn-4DHUQTEMli02xMHwPGJUwbWG7l9KEoLSHjBRl5C6aMfXbLDfvRf6Y1dXH4jAagz9O3AnFYqafEX6Qs5ZDdsH7z9ad_3r9PTxNCK6-bA-l9V8Xiveu1BOfpK6CZA5p2wka3l1uuqeV6j5VCSAYE7_U_DeyvochPeUVINzd_0G00 "Book store")
 
 ## IntelliJ IDEA 集成
 
@@ -127,7 +127,7 @@ thing(书,Book)
 ```
 
 
-![example](http://www.plantuml.com/plantuml/svg/FSgn3S8m443HtbE4Bf6YkAUAM80PZ7rA8dntqVbEP0bA5g2Wf6SVa1W3LpHV-j8RYmPHmzp05d3Du7OBnMm9cbbrBNll9Lo6QT7PJbP08fC2wH0P_KISRFEHCujXzXYAWln_M6iSCbRVVf_tp_NM7oM1T4xdXQRs_Nhq1-PpvqQWLF4F )
+![example](http://www.plantuml.com/plantuml/svg/FSgn3S8m443HtbE4Bf6YkAUAM80PZ7rA8dntqVbEP0bA5g2Wf6SVa1W3LpHV-j8RYmPHmzp05d3Du7OBnMm9cbbrBNll9Lo6QT7PJbP08fC2wH0P_KISRFEHCujXzXYAWln_M6iSCbRVVf_tp_NM7oM1T4xdXQRs_Nhq1-PpvqQWLF4F)
 
 接下来我们为领域对象添加一些属性和方法:
 
@@ -143,7 +143,7 @@ thing(书,Book){
 @enduml
 ```
 
-![Field example](http://www.plantuml.com/plantuml/svg/JOqnZi8m44LxdyBR9L8KzrjbqwNPBPOB1DkABUoPQ3mMI8WZK7812afwxWCIny1G8AQRf_V_xnAFn3a68Ruyw92DbOvvJjzAqRXk9yykBtEof17O0hSQeve0JTueZG6fP5KS4rjw_-tyB8mOYr_TpyVR_j3yaR5K2tOUfkfwEJKzughU2bakCHKg5vw3VG4FB7yoEwJ1V1h3V_yhTa9q5aoPU000)
+![Field example](http://www.plantuml.com/plantuml/svg/JOqnQWCn44LxdKBfTc5PzQassssJ5Ca556bOYKYQPJGY2yP7SEaBk73ftlUnmSUmS64ynS1_FFuVCclY4eE4LSSbW7ZpoOHYGJhc9RyhHVg_dpsxybioaC74aBWt6DMSq9PL6Gn8jK95dHdecVkbFX4nLh-vdGxNtRxx8WlK2dO-pStbVEn6nBzs8sIzp5If_F4Su05yOlbHs25DzjMOliTFiHK395iNxW00)
 
 ### 领域模型的关系
 

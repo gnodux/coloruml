@@ -1,7 +1,7 @@
 @startuml Book Store sample
 
 !include https://raw.githubusercontent.com/gnodux/coloruml/master/coloruml.puml
-'
+
 '!include ../coloruml.puml
 'left_to_right
 
@@ -38,4 +38,5 @@ Customer has(Order)
 Customer has(Comments)
 
 Bill layout_u(Delivery)
+
 @enduml
