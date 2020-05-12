@@ -1,9 +1,9 @@
 @startuml Book Store sample
 
-!include https://raw.githubusercontent.com/gnodux/coloruml/master/coloruml.puml
+'!include https://raw.githubusercontent.com/gnodux/coloruml/master/coloruml.puml
 
-'!include ../coloruml.puml
-left_to_right()
+!include ../coloruml.puml
+'left_to_right()
 
 moment(订单,Order){
     int OrderId
