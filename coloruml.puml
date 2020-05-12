@@ -13,25 +13,25 @@ defaultFontName "Microsoft YaHei"
     Shadowing false
 }
 
-!function hard_line()
+!procedure hard_line()
 skinparam LineType ortho
-!endfunction
+!endprocedure
 
-!function left_to_right()
+!procedure left_to_right()
 left to right direction
-!endfunction
-!function top_to_bottom()
+!endprocedure
+!procedure top_to_bottom()
 top to bottom direction
-!endfunction
+!endprocedure
 
-!function hand_write()
+!procedure hand_write()
 skinparam handwritten true
 skinparam defaultFontName "Comic Sans MS"
 center footer <font color=red>Warning:</font>Discussion only.
-!endfunction
+!endprocedure
 
 
-!function legend()
+!procedure legend()
 hide stereotype
 legend right
 |=  Color             |= Type |
@@ -40,7 +40,7 @@ legend right
 |<ROLE_COLOR>   | Role |
 |<DESC_COLOR>      | Description |
 endlegend
-!endfunction
+!endprocedure
 
 skinparam package{
     BorderColor #666666
